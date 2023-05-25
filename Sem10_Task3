@@ -1,0 +1,12 @@
+per = ['attribute','класс', 'функция', 'type']
+
+for i in per:
+    try:
+        print(i, type(i), bytes(i, 'utf-8'), ' - encoding to bytes successful ')
+    except:
+        print(i, type(i), ' - not valid input for bytes string')
+
+
+"""
+«класс», «функция», невозможно записать в байтовом типе с помощью маркировки b'' 
+"""
